@@ -33,21 +33,8 @@ public class SectionsPresenter implements SectionsContract.Presenter {
     state = new SectionsState();
 
     // call the model and update the state
-    //state.data = model.getStoredData();
+    //MenuItems menuItems = model.getStoredData();
 
-
-    /*
-    // use passed state if is necessary
-    ItemsToSectionsState savedState = getStateFromPreviousScreen();
-    if (savedState != null) {
-
-      // update the model if is necessary
-      model.onDataFromPreviousScreen(savedState.data);
-
-      // update the state if is necessary
-      state.data = savedState.data;
-    }
-    */
   }
 
   @Override
@@ -83,11 +70,11 @@ public class SectionsPresenter implements SectionsContract.Presenter {
         state.itemMainCourses = savedState.itemSection;
       }
 
-      //state.itemStarters = savedState.itemSection;
     }
 
     // call the model and update the state
-    //state.data = model.getStoredData();
+    //MenuItems menuItems = model.getStoredData();
+
 
     // update the view
     view.get().onDataUpdated(state);
@@ -115,7 +102,6 @@ public class SectionsPresenter implements SectionsContract.Presenter {
     state.menuSection = MenuSection.Starters;
     MenuItems menuItems = model.getStoredData();
     newState.itemsSection = menuItems.itemsStarters;
-    //mediator.setSectionsToItemsState(newState);
     passStateToNextScreen(newState);
     view.get().navigateToNextScreen();
   }
@@ -126,7 +112,6 @@ public class SectionsPresenter implements SectionsContract.Presenter {
     state.menuSection = MenuSection.MainCourses;
     MenuItems menuItems = model.getStoredData();
     newState.itemsSection = menuItems.itemsMainCourses;
-    //mediator.setSectionsToItemsState(newState);
     passStateToNextScreen(newState);
     view.get().navigateToNextScreen();
   }
@@ -137,7 +122,6 @@ public class SectionsPresenter implements SectionsContract.Presenter {
     state.menuSection = MenuSection.Desserts;
     MenuItems menuItems = model.getStoredData();
     newState.itemsSection = menuItems.itemsStarters;
-    //mediator.setSectionsToItemsState(newState);
     passStateToNextScreen(newState);
     view.get().navigateToNextScreen();
   }
@@ -150,15 +134,6 @@ public class SectionsPresenter implements SectionsContract.Presenter {
     mediator.setSectionsToItemsState(state);
   }
 
-  /*
-  private void passStateToPreviousScreen(SectionsToPreviousState state) {
-    mediator.setPreviousSectionsScreenState(state);
-  }
-
-  private PreviousToSectionsState getStateFromPreviousScreen() {
-    return mediator.getPreviousSectionsScreenState();
-  }
-  */
 
   @Override
   public void injectView(WeakReference<SectionsContract.View> view) {

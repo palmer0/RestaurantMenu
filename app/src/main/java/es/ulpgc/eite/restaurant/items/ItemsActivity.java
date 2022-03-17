@@ -98,13 +98,6 @@ public class ItemsActivity
     finish();
   }
 
-  /*
-  @Override
-  public void navigateToNextScreen() {
-    Intent intent = new Intent(this, ItemsActivity.class);
-    startActivity(intent);
-  }
-  */
 
   @Override
   public void injectPresenter(ItemsContract.Presenter presenter) {

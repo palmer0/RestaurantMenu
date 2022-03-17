@@ -16,12 +16,9 @@ public class ItemsScreen {
         new WeakReference<>((FragmentActivity) view);
     */
 
-    //String data = context.get().getString(R.string.app_name);
-
     AppMediator mediator = AppMediator.getInstance();
 
     ItemsContract.Presenter presenter = new ItemsPresenter(mediator);
-    //ItemsContract.Model model = new ItemsModel(data);
     ItemsContract.Model model = new ItemsModel();
     presenter.injectModel(model);
     presenter.injectView(new WeakReference<>(view));

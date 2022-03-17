@@ -11,7 +11,5 @@ public class ItemsViewModel {
 
   // put the view state here
   public List<MenuItem> itemsSection;
-  //public MenuItem itemFirst;
-  //public MenuItem itemSecond;
 
 }

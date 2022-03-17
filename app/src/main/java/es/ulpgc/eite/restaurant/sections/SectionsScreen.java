@@ -16,21 +16,9 @@ public class SectionsScreen {
         new WeakReference<>((FragmentActivity) view);
     */
 
-    /*
-    MenuItems data= new MenuItems();
-    data.arrayStarters =
-        context.get().getResources().getStringArray(R.array.items_starters);
-    data.arrayMainCourses =
-        context.get().getResources().getStringArray(R.array.items_main_courses);
-    data.arrayDesserts =
-        context.get().getResources().getStringArray(R.array.items_desserts);
-
-    */
-
     AppMediator mediator = AppMediator.getInstance();
 
     SectionsContract.Presenter presenter = new SectionsPresenter(mediator);
-    //SectionsContract.Model model = new SectionsModel(data);
     SectionsContract.Model model = new SectionsModel();
     presenter.injectModel(model);
     presenter.injectView(new WeakReference<>(view));

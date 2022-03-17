@@ -31,7 +31,7 @@ public class ItemsPresenter implements ItemsContract.Presenter {
     state = new ItemsState();
 
     // call the model and update the state
-    //state.data = model.getStoredData();
+    //state.itemsSection = model.getStoredData();
 
     // use passed state if is necessary
     SectionsToItemsState savedState = getStateFromPreviousScreen();
@@ -42,10 +42,7 @@ public class ItemsPresenter implements ItemsContract.Presenter {
 
       // update the state if is necessary
       state.itemsSection = savedState.itemsSection;
-      //state.itemFirst = savedState.itemsSection.get(0);
-      //state.itemSecond = savedState.itemsSection.get(1);
 
-      //Log.e(TAG, "onStart():" + state.itemsSection );
     }
   }
 
@@ -54,28 +51,15 @@ public class ItemsPresenter implements ItemsContract.Presenter {
     // Log.e(TAG, "onRestart()");
 
     // update the model if is necessary
-    //model.onRestartScreen(state.data);
+    //model.onRestartScreen(state.itemsSection);
   }
 
   @Override
   public void onResume() {
     // Log.e(TAG, "onResume()");
 
-    /*
-    // use passed state if is necessary
-    NextToItemsState savedState = getStateFromNextScreen();
-    if (savedState != null) {
-
-      // update the model if is necessary
-      model.onDataFromNextScreen(savedState.data);
-
-      // update the state if is necessary
-      state.data = savedState.data;
-    }
-    */
-
     // call the model and update the state
-    //state.data = model.getStoredData();
+    //state.itemsSection = model.getStoredData();
 
     // update the view
     view.get().onDataUpdated(state);
@@ -102,7 +86,6 @@ public class ItemsPresenter implements ItemsContract.Presenter {
   public void onFirstBtnClicked() {
     ItemsToSectionsState newState= new ItemsToSectionsState();
     newState.itemSection = state.itemsSection.get(0);
-    //mediator.setItemsToSectionsState(newState);
     passStateToPreviousScreen(newState);
     view.get().navigateToPreviousScreen();
   }
@@ -111,22 +94,10 @@ public class ItemsPresenter implements ItemsContract.Presenter {
   public void onSecondBtnClicked() {
     ItemsToSectionsState newState= new ItemsToSectionsState();
     newState.itemSection = state.itemsSection.get(1);
-    //mediator.setItemsToSectionsState(newState);
     passStateToPreviousScreen(newState);
     view.get().navigateToPreviousScreen();
   }
 
-
-  /*
-  private NextToItemsState getStateFromNextScreen() {
-    return mediator.getNextItemsScreenState();
-  }
-
-  private void passStateToNextScreen(ItemsToNextState state) {
-    mediator.setNextItemsScreenState(state);
-  }
-
-  */
 
   private void passStateToPreviousScreen(ItemsToSectionsState state) {
     mediator.setItemsToSectionsState(state);

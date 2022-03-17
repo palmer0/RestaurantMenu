@@ -7,10 +7,5 @@ import java.util.List;
  */
 public class SectionsToItemsState {
 
-  //public String[] sectionItems;
-  //public MenuSection menuSection;
-
   public List<MenuItem> itemsSection;
-  //public MenuItem itemFirst;
-  //public MenuItem itemSecond;
 }

@@ -59,12 +59,6 @@ public class SectionsModel implements SectionsContract.Model {
     data.itemsStarters=itemsStarters;
   }
 
-  /*
-  public SectionsModel(MenuItems data) {
-    this.data = data;
-  }
-  */
-
 
   @Override
   public MenuItems getStoredData() {

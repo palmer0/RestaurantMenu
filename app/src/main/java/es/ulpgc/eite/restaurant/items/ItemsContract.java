@@ -17,7 +17,6 @@ public interface ItemsContract {
 
     void onDataUpdated(ItemsViewModel viewModel);
 
-    //void navigateToNextScreen();
   }
 
   interface Presenter {

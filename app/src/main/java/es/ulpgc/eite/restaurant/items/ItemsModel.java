@@ -13,12 +13,6 @@ public class ItemsModel implements ItemsContract.Model {
 
   private List<MenuItem> data;
 
-  /*
-  public ItemsModel(List<MenuItem> data) {
-    this.data = data;
-  }
-
-  */
 
   public ItemsModel() {
     //data=new ArrayList<>();
@@ -44,6 +38,5 @@ public class ItemsModel implements ItemsContract.Model {
   public void onDataFromPreviousScreen(List<MenuItem> data) {
     // Log.e(TAG, "onDataFromPreviousScreen()");
 
-    this.data=data;
   }
 }
