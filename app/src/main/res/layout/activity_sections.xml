@@ -34,15 +34,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/title_starters"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/tvItemStarters"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/title_item_empty"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="@string/title_select_item"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/white"/>
 
             <TextView
@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/price_item_empty"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/white"/>
         </LinearLayout>
 
@@ -71,15 +71,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/title_main_courses"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/tvItemMainCourses"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/title_item_empty"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="@string/title_select_item"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/white"/>
 
             <TextView
@@ -87,7 +87,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/price_item_empty"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/white"/>
         </LinearLayout>
 
@@ -108,15 +108,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/title_desserts"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/tvItemDesserts"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/title_item_empty"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="@string/title_select_item"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/white"/>
 
 
@@ -125,7 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/price_item_empty"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/white"/>
         </LinearLayout>
     </LinearLayout>

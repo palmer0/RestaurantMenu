@@ -5,7 +5,8 @@
     <string name="title_starters">Starters</string>
     <string name="title_main_courses">Main Courses</string>
     <string name="title_desserts">Desserts</string>
-    <string name="title_item_empty">---</string>
+    <string name="title_item_empty">\???</string>
+    <string name="title_select_item">Click to choose one...</string>
     <string name="price_item_empty">0</string>
     <string name="title_second_item">Second Item</string>
     <string name="title_first_item">First Item</string>

@@ -1,5 +1,7 @@
 package es.ulpgc.eite.restaurant.items;
 
+import android.util.Log;
+
 import java.lang.ref.WeakReference;
 
 import es.ulpgc.eite.restaurant.menu.AppMediator;
@@ -25,10 +27,10 @@ public class ItemsPresenter implements ItemsContract.Presenter {
 
   @Override
   public void onStart() {
-    // Log.e(TAG, "onStart()");
+    Log.e(TAG, "onStart()");
 
     // initialize the state 
-    state = new ItemsState();
+    //state = new ItemsState();
 
     // call the model and update the state
     //state.itemsSection = model.getStoredData();
@@ -48,7 +50,7 @@ public class ItemsPresenter implements ItemsContract.Presenter {
 
   @Override
   public void onRestart() {
-    // Log.e(TAG, "onRestart()");
+    Log.e(TAG, "onRestart()");
 
     // update the model if is necessary
     //model.onRestartScreen(state.itemsSection);
@@ -56,7 +58,7 @@ public class ItemsPresenter implements ItemsContract.Presenter {
 
   @Override
   public void onResume() {
-    // Log.e(TAG, "onResume()");
+    Log.e(TAG, "onResume()");
 
     // call the model and update the state
     //state.itemsSection = model.getStoredData();
