@@ -5,48 +5,12 @@
     <string name="title_starters">Starters</string>
     <string name="title_main_courses">Main Courses</string>
     <string name="title_desserts">Desserts</string>
+    <string name="title_total_price">Total Price</string>
     <string name="title_item_empty">\???</string>
     <string name="title_select_item">Click to choose one...</string>
     <string name="price_item_empty">0</string>
     <string name="title_second_item">Second Item</string>
     <string name="title_first_item">First Item</string>
 
-    <string-array name="items_starters">
-        <item></item>
-        <item></item>
-        <item></item>
-    </string-array>
 
-    <string-array name="items_main_courses">
-        <item></item>
-        <item></item>
-        <item></item>
-    </string-array>
-
-
-    <integer-array name="items_desserts">
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-    </integer-array>
-
-
-    <integer-array name="prices_starters">
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-    </integer-array>
-
-    <integer-array name="prices_main_courses">
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-    </integer-array>
-
-
-    <integer-array name="prices_desserts">
-        <item></item>
-        <item></item>
-        <item></item>
-    </integer-array>
 </resources>
