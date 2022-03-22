@@ -1,8 +1,8 @@
-package es.ulpgc.eite.restaurant.sections;
+package es.ulpgc.eite.restaurantmenu.sections;
 
 import java.lang.ref.WeakReference;
 
-import es.ulpgc.eite.restaurant.app.AppMediator;
+import es.ulpgc.eite.restaurantmenu.app.AppMediator;
 
 /**
  * Created by Luis on marzo, 2022

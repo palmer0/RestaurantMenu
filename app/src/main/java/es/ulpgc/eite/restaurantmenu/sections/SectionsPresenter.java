@@ -1,14 +1,14 @@
-package es.ulpgc.eite.restaurant.sections;
+package es.ulpgc.eite.restaurantmenu.sections;
 
 import android.util.Log;
 
 import java.lang.ref.WeakReference;
 
-import es.ulpgc.eite.restaurant.app.AppMediator;
-import es.ulpgc.eite.restaurant.app.ItemsToSectionsState;
-import es.ulpgc.eite.restaurant.app.MenuItems;
-import es.ulpgc.eite.restaurant.app.MenuSection;
-import es.ulpgc.eite.restaurant.app.SectionsToItemsState;
+import es.ulpgc.eite.restaurantmenu.app.AppMediator;
+import es.ulpgc.eite.restaurantmenu.app.ItemsToSectionsState;
+import es.ulpgc.eite.restaurantmenu.app.MenuItems;
+import es.ulpgc.eite.restaurantmenu.app.MenuSection;
+import es.ulpgc.eite.restaurantmenu.app.SectionsToItemsState;
 
 /**
  * Created by Luis on marzo, 2022

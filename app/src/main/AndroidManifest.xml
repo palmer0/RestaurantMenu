@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="es.ulpgc.eite.restaurant">
+    package="es.ulpgc.eite.restaurantmenu">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Restaurant">
         <activity
-            android:name=".sections.SectionsActivity"
+            android:name="es.ulpgc.eite.restaurantmenu.sections.SectionsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +19,7 @@
         </activity>
 
         <activity
-            android:name=".items.ItemsActivity"
+            android:name="es.ulpgc.eite.restaurantmenu.items.ItemsActivity"
             android:exported="true">
 
         </activity>

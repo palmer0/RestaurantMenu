@@ -1,6 +1,6 @@
-package es.ulpgc.eite.restaurant.sections;
+package es.ulpgc.eite.restaurantmenu.sections;
 
-import es.ulpgc.eite.restaurant.app.MenuSection;
+import es.ulpgc.eite.restaurantmenu.app.MenuSection;
 
 /**
  * Created by Luis on marzo, 2022

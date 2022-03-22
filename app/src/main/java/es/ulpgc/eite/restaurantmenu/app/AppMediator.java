@@ -1,7 +1,7 @@
-package es.ulpgc.eite.restaurant.app;
+package es.ulpgc.eite.restaurantmenu.app;
 
-import es.ulpgc.eite.restaurant.items.ItemsState;
-import es.ulpgc.eite.restaurant.sections.SectionsState;
+import es.ulpgc.eite.restaurantmenu.items.ItemsState;
+import es.ulpgc.eite.restaurantmenu.sections.SectionsState;
 
 /**
  * Created by Luis on marzo, 2022

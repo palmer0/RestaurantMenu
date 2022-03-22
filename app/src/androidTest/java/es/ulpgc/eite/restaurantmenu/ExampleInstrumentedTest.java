@@ -1,4 +1,4 @@
-package es.ulpgc.eite.restaurant;
+package es.ulpgc.eite.restaurantmenu;
 
 import android.content.Context;
 

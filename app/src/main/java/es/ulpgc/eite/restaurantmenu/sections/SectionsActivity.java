@@ -1,4 +1,4 @@
-package es.ulpgc.eite.restaurant.sections;
+package es.ulpgc.eite.restaurantmenu.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import es.ulpgc.eite.restaurant.R;
-import es.ulpgc.eite.restaurant.items.ItemsActivity;
+import es.ulpgc.eite.restaurantmenu.R;
+import es.ulpgc.eite.restaurantmenu.items.ItemsActivity;
 
 /**
  * Created by Luis on marzo, 2022

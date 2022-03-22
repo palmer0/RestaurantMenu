@@ -1,4 +1,4 @@
-package es.ulpgc.eite.restaurant.app;
+package es.ulpgc.eite.restaurantmenu.app;
 
 /**
  * Created by Luis on marzo, 2022

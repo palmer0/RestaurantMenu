@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Restaurant</string>
+    <string name="app_name">Restaurant Menu</string>
     <string name="title_sections_screen">Menu Sections</string>
     <string name="title_items_screen">Menu Items</string>
     <string name="title_starters">Starters</string>

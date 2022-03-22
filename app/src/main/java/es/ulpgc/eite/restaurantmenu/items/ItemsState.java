@@ -1,4 +1,4 @@
-package es.ulpgc.eite.restaurant.items;
+package es.ulpgc.eite.restaurantmenu.items;
 
 /**
  * Created by Luis on marzo, 2022
