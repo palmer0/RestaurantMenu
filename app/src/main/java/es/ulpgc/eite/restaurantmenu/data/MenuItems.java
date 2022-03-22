@@ -1,4 +1,4 @@
-package es.ulpgc.eite.restaurantmenu.app;
+package es.ulpgc.eite.restaurantmenu.data;
 
 import java.util.List;
 

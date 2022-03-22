@@ -6,9 +6,9 @@ import java.lang.ref.WeakReference;
 
 import es.ulpgc.eite.restaurantmenu.app.AppMediator;
 import es.ulpgc.eite.restaurantmenu.app.ItemsToSectionsState;
-import es.ulpgc.eite.restaurantmenu.app.MenuItem;
-import es.ulpgc.eite.restaurantmenu.app.MenuItems;
-import es.ulpgc.eite.restaurantmenu.app.MenuSection;
+import es.ulpgc.eite.restaurantmenu.data.MenuItem;
+import es.ulpgc.eite.restaurantmenu.data.MenuItems;
+import es.ulpgc.eite.restaurantmenu.data.MenuSection;
 import es.ulpgc.eite.restaurantmenu.app.SectionsToItemsState;
 
 /**

@@ -3,7 +3,7 @@ package es.ulpgc.eite.restaurantmenu.items;
 import java.lang.ref.WeakReference;
 import java.util.List;
 
-import es.ulpgc.eite.restaurantmenu.app.MenuItem;
+import es.ulpgc.eite.restaurantmenu.data.MenuItem;
 
 /**
  * Created by Luis on marzo, 2022

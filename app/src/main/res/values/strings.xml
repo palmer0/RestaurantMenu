@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Restaurant Menu</string>
-    <string name="title_sections_screen">Menu Sections</string>
-    <string name="title_items_screen">Menu Items</string>
+    <string name="title_sections_screen">Restaurant: Menu Sections</string>
+    <string name="title_items_screen">Restaurant: Menu Items</string>
     <string name="title_starters">Starters</string>
     <string name="title_main_courses">Main Courses</string>
     <string name="title_desserts">Desserts</string>
