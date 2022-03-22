@@ -89,22 +89,26 @@ public class SectionsActivity
       ((TextView) findViewById(R.id.tvItemStarters))
           .setText(viewModel.itemStarters.itemName);
       ((TextView) findViewById(R.id.tvPriceStarters))
-          .setText("" + viewModel.itemStarters.itemPrice);
+          .setText(viewModel.itemStarters.itemPrice + " euros");
     }
 
     if (viewModel.itemDesserts != null) {
       ((TextView) findViewById(R.id.tvItemDesserts))
           .setText(viewModel.itemDesserts.itemName);
       ((TextView) findViewById(R.id.tvPriceDesserts))
-          .setText("" + viewModel.itemDesserts.itemPrice);
+          .setText(viewModel.itemDesserts.itemPrice + " euros");
     }
 
     if (viewModel.itemMainCourses != null) {
       ((TextView) findViewById(R.id.tvItemMainCourses))
           .setText(viewModel.itemMainCourses.itemName);
       ((TextView) findViewById(R.id.tvPriceMainCourses))
-          .setText("" + viewModel.itemMainCourses.itemPrice);
+          .setText(viewModel.itemMainCourses.itemPrice + " euros");
     }
+
+
+    ((TextView) findViewById(R.id.tvPriceMenu))
+        .setText(viewModel.priceMenu + " euros");
   }
 
 

@@ -8,7 +8,7 @@
     <string name="title_total_price">Total Price</string>
     <string name="title_item_empty">\???</string>
     <string name="title_select_item">Click to choose one...</string>
-    <string name="price_item_empty">0</string>
+    <string name="price_item_empty">0 euros</string>
     <string name="title_second_item">Second Item</string>
     <string name="title_first_item">First Item</string>
 

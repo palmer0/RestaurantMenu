@@ -21,7 +21,7 @@ public class SectionsModel implements SectionsContract.Model {
 
     MenuItem itemStarters = new MenuItem();
     itemStarters.itemName = "First Starter";
-    itemStarters.itemPrice = 8;
+    itemStarters.itemPrice = 10;
     itemsStarters.add(itemStarters);
 
     itemStarters = new MenuItem();
@@ -45,7 +45,7 @@ public class SectionsModel implements SectionsContract.Model {
 
     MenuItem itemDesserts = new MenuItem();
     itemDesserts.itemName = "First Dessert";
-    itemDesserts.itemPrice = 10;
+    itemDesserts.itemPrice = 7;
     itemsDesserts.add(itemDesserts);
 
     itemDesserts = new MenuItem();

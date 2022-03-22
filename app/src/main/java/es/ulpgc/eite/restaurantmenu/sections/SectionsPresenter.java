@@ -6,6 +6,7 @@ import java.lang.ref.WeakReference;
 
 import es.ulpgc.eite.restaurantmenu.app.AppMediator;
 import es.ulpgc.eite.restaurantmenu.app.ItemsToSectionsState;
+import es.ulpgc.eite.restaurantmenu.app.MenuItem;
 import es.ulpgc.eite.restaurantmenu.app.MenuItems;
 import es.ulpgc.eite.restaurantmenu.app.MenuSection;
 import es.ulpgc.eite.restaurantmenu.app.SectionsToItemsState;
@@ -67,17 +68,21 @@ public class SectionsPresenter implements SectionsContract.Presenter {
       //model.onDataFromNextScreen(savedState.itemSection);
 
       // update the state if is necessary
+      MenuItem itemSection = savedState.itemSection;
+
       if(state.menuSection == MenuSection.Starters) {
-        state.itemStarters = savedState.itemSection;
+        state.itemStarters = itemSection;
       }
 
       if(state.menuSection == MenuSection.Desserts) {
-        state.itemDesserts = savedState.itemSection;
+        state.itemDesserts = itemSection;
       }
 
       if(state.menuSection == MenuSection.MainCourses) {
-        state.itemMainCourses = savedState.itemSection;
+        state.itemMainCourses = itemSection;
       }
+
+      state.priceMenu += itemSection.itemPrice;
 
     }
 

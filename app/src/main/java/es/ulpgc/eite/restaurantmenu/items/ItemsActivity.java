@@ -84,12 +84,12 @@ public class ItemsActivity
       ((TextView) findViewById(R.id.tvNameFirst))
           .setText(viewModel.itemsSection.get(0).itemName);
       ((TextView) findViewById(R.id.tvPriceFirst))
-          .setText("" + viewModel.itemsSection.get(0).itemPrice);
+          .setText(viewModel.itemsSection.get(0).itemPrice + " euros");
 
       ((TextView) findViewById(R.id.tvNameSecond))
           .setText(viewModel.itemsSection.get(1).itemName);
       ((TextView) findViewById(R.id.tvPriceSecond))
-          .setText("" + viewModel.itemsSection.get(1).itemPrice);
+          .setText(viewModel.itemsSection.get(1).itemPrice + " euros");
     }
   }
 

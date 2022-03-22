@@ -11,4 +11,6 @@ public class SectionsViewModel {
   public MenuItem itemStarters;
   public MenuItem itemMainCourses;
   public MenuItem itemDesserts;
+
+  public Integer priceMenu = 0;
 }
