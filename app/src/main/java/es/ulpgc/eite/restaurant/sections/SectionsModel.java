@@ -3,8 +3,8 @@ package es.ulpgc.eite.restaurant.sections;
 import java.util.ArrayList;
 import java.util.List;
 
-import es.ulpgc.eite.restaurant.menu.MenuItem;
-import es.ulpgc.eite.restaurant.menu.MenuItems;
+import es.ulpgc.eite.restaurant.app.MenuItem;
+import es.ulpgc.eite.restaurant.app.MenuItems;
 
 /**
  * Created by Luis on marzo, 2022

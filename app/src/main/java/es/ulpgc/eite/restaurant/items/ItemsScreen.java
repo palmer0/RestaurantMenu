@@ -2,7 +2,7 @@ package es.ulpgc.eite.restaurant.items;
 
 import java.lang.ref.WeakReference;
 
-import es.ulpgc.eite.restaurant.menu.AppMediator;
+import es.ulpgc.eite.restaurant.app.AppMediator;
 
 /**
  * Created by Luis on marzo, 2022

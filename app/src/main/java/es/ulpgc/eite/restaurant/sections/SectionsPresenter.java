@@ -4,11 +4,11 @@ import android.util.Log;
 
 import java.lang.ref.WeakReference;
 
-import es.ulpgc.eite.restaurant.menu.AppMediator;
-import es.ulpgc.eite.restaurant.menu.ItemsToSectionsState;
-import es.ulpgc.eite.restaurant.menu.MenuItems;
-import es.ulpgc.eite.restaurant.menu.MenuSection;
-import es.ulpgc.eite.restaurant.menu.SectionsToItemsState;
+import es.ulpgc.eite.restaurant.app.AppMediator;
+import es.ulpgc.eite.restaurant.app.ItemsToSectionsState;
+import es.ulpgc.eite.restaurant.app.MenuItems;
+import es.ulpgc.eite.restaurant.app.MenuSection;
+import es.ulpgc.eite.restaurant.app.SectionsToItemsState;
 
 /**
  * Created by Luis on marzo, 2022

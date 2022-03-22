@@ -1,4 +1,4 @@
-package es.ulpgc.eite.restaurant.menu;
+package es.ulpgc.eite.restaurant.app;
 
 import es.ulpgc.eite.restaurant.items.ItemsState;
 import es.ulpgc.eite.restaurant.sections.SectionsState;

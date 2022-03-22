@@ -2,7 +2,7 @@ package es.ulpgc.eite.restaurant.items;
 
 import java.util.List;
 
-import es.ulpgc.eite.restaurant.menu.MenuItem;
+import es.ulpgc.eite.restaurant.app.MenuItem;
 
 /**
  * Created by Luis on marzo, 2022
