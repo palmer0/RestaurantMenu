@@ -659,12 +659,12 @@ public class RestaurantMenuTests {
     steps.userPressSection("Desserts");
     steps.appStartScreen("Menu Items");
     steps.userPressItem("Second Dessert");
+    steps.appResumeScreen("Menu Sections");
 
     // When
     steps.userRotateScreen("Menu Sections");
 
     // Then
-    steps.appResumeScreen("Menu Sections");
     steps.appShowTextOnSection("Choose one...", "Starters");
     steps.appShowPriceOnSection("0 euros", "Starters");
     steps.appShowTextOnSection("First Main Course", "Main Courses");
@@ -698,12 +698,12 @@ public class RestaurantMenuTests {
     steps.userPressSection("Main Courses");
     steps.appStartScreen("Menu Items");
     steps.userPressItem("Second Main Course");
+    steps.appResumeScreen("Menu Sections");
 
     // When
     steps.userRotateScreen("Menu Sections");
 
     // Then
-    steps.appResumeScreen("Menu Sections");
     steps.appShowTextOnSection("First Starter", "Starters");
     steps.appShowPriceOnSection("10 euros", "Starters");
     steps.appShowTextOnSection("Second Main Course", "Main Courses");
@@ -738,12 +738,12 @@ public class RestaurantMenuTests {
     steps.userPressSection("Desserts");
     steps.appStartScreen("Menu Items");
     steps.userPressItem("Second Dessert");
+    steps.appResumeScreen("Menu Sections");
 
     // When
     steps.userRotateScreen("Menu Sections");
 
     // Then
-    steps.appResumeScreen("Menu Sections");
     steps.appShowTextOnSection("First Starter", "Starters");
     steps.appShowPriceOnSection("10 euros", "Starters");
     steps.appShowTextOnSection("Choose one...", "Main Courses");
