@@ -72,7 +72,7 @@ Feature: Restaurant Menu
 
     When user press item "First Starter"
 
-    Then app resume main screen
+    Then app resume screen "Menu Sections"
     And app show text "First Starter" on section "Starters"
     And app show price "10 euros" on section "Starters"
     And app show text "Choose one..." on section "Main Courses"

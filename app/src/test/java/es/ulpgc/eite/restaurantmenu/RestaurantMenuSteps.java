@@ -3,6 +3,7 @@ package es.ulpgc.eite.restaurantmenu;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+import android.os.Bundle;
 import android.widget.TextView;
 
 import org.robolectric.Robolectric;
@@ -44,9 +45,23 @@ public class RestaurantMenuSteps {
     }
   }
 
-  @Then("app resume main screen")
-  public void appResumeMainScreen() {
-    sectionTestCtrl.resume();
+
+  @Then("app resume screen {string}")
+  public void appResumeScreen(String screen) {
+
+    if(screen.contains("Sections")) {
+      sectionTestCtrl.resume();
+    }
+  }
+
+  @When("user press back on screen {string}")
+  public void userPressBackOnScreen(String screen) {
+
+    if(screen.contains("Items")) {
+      ItemsActivity activity = itemTestCtrl.get();
+      activity.onBackPressed();
+    }
+
   }
 
 
@@ -56,17 +71,14 @@ public class RestaurantMenuSteps {
     SectionsActivity activity = sectionTestCtrl.get();
 
     if(section.contains("Starters")) {
-
       activity.findViewById(R.id.btnStarters).performClick();
     }
 
     if(section.contains("Courses")) {
-
       activity.findViewById(R.id.btnMainCourses).performClick();
     }
 
     if(section.contains("Desserts")) {
-
       activity.findViewById(R.id.btnDesserts).performClick();
     }
 
@@ -117,6 +129,11 @@ public class RestaurantMenuSteps {
       TextView tv = activity.findViewById(R.id.tvPriceDesserts);
       assertThat(tv.getText().toString(), equalTo(price));
     }
+
+    if(section.contains("Total")) {
+      TextView tv = activity.findViewById(R.id.tvPriceMenu);
+      assertThat(tv.getText().toString(), equalTo(price));
+    }
   }
 
 
@@ -143,20 +160,56 @@ public class RestaurantMenuSteps {
     ItemsActivity activity = itemTestCtrl.get();
 
     if(item.contains("First")) {
-
       activity.findViewById(R.id.btnFirst).performClick();
     }
 
     if(item.contains("Second")) {
-
       activity.findViewById(R.id.btnSecond).performClick();
     }
+  }
+
+
+
+  @When("user rotate screen {string}")
+  public void userRotateScreen(String screen) {
+
+
+    Bundle bundle = new Bundle();
+
+    if(screen.equals("Sections")) {
+      sectionTestCtrl
+          .saveInstanceState(bundle)
+          .pause()
+          .stop()
+          .destroy();
+
+      sectionTestCtrl = Robolectric.buildActivity(SectionsActivity.class)
+          .create(bundle)
+          .restoreInstanceState(bundle)
+          .resume()
+          .visible();
+    }
+
+    if(screen.equals("Items")) {
+      itemTestCtrl
+          .saveInstanceState(bundle)
+          .pause()
+          .stop()
+          .destroy();
+
+      itemTestCtrl = Robolectric.buildActivity(ItemsActivity.class)
+          .create(bundle)
+          .restoreInstanceState(bundle)
+          .resume()
+          .visible();
+
+    }
+
   }
 
 
   public void resetTest() {
       AppMediator.resetInstance();
   }
-
 
 }
