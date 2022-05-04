@@ -38,6 +38,7 @@ public class SectionsActivity
     }
   }
 
+
   @Override
   protected void onResume() {
     super.onResume();

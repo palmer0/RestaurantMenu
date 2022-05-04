@@ -146,7 +146,7 @@ public class SectionsPresenter implements SectionsContract.Presenter {
     SectionsToItemsState newState = new SectionsToItemsState();
     state.menuSection = MenuSection.Desserts;
     MenuItems menuItems = model.getStoredData();
-    newState.itemsSection = menuItems.itemsStarters;
+    newState.itemsSection = menuItems.itemsDesserts;
     passStateToNextScreen(newState);
     view.get().navigateToNextScreen();
   }
