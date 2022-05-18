@@ -82,9 +82,14 @@ public class SectionsPresenter implements SectionsContract.Presenter {
         state.itemMainCourses = itemSection;
       }
 
-      state.priceMenu += itemSection.itemPrice;
+      //state.priceMenu += itemSection.itemPrice;
 
     }
+
+
+    state.priceMenu = (state.itemStarters != null ? state.itemStarters.itemPrice : 0)
+        + (state.itemMainCourses != null ? state.itemMainCourses.itemPrice : 0)
+        + (state.itemDesserts != null ? state.itemDesserts.itemPrice : 0);
 
     Log.e(TAG, "menuSection:" + state.menuSection);
     Log.e(TAG, "itemStarters:" + state.itemStarters);

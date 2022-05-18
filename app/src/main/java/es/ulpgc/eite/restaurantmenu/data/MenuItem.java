@@ -8,7 +8,8 @@ import androidx.annotation.NonNull;
 public class MenuItem {
 
   public String itemName;
-  public Integer itemPrice;
+  public Integer itemPrice = 0;
+  //public Integer itemPrice = 0;
 
 
   @NonNull
