@@ -86,7 +86,6 @@ public class SectionsPresenter implements SectionsContract.Presenter {
 
     }
 
-
     state.priceMenu = (state.itemStarters != null ? state.itemStarters.itemPrice : 0)
         + (state.itemMainCourses != null ? state.itemMainCourses.itemPrice : 0)
         + (state.itemDesserts != null ? state.itemDesserts.itemPrice : 0);
